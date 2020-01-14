@@ -1,23 +1,37 @@
+package model;
+
 import java.util.Random;
 
 /**
- * A class that describes a User Model on a Social Media Platform
+ * A class that describes a model.User Model on a Social Media Platform
  */
 public class User {
 
-    private int id;
+    /**
+     * A randomly generated user identifier
+     */
+    private final int id;
 
+    /**
+     * Full name of the user
+     */
     private String name;
 
+    /**
+     * Optional - phone number for user
+     */
     private String phone;
 
+    /**
+     * User email
+     */
     private String email;
 
     /**
      * Creates a new {@link User} with provided name, email and a random ID.
      *
-     * @param name  - User's pers. name
-     * @param email - User's pers. email
+     * @param name  - model.User's pers. name
+     * @param email - model.User's pers. email
      */
     public User(String name, String email) {
         this.name = name;
@@ -43,6 +57,10 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 
