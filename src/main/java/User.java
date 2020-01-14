@@ -16,8 +16,8 @@ public class User {
     /**
      * Creates a new {@link User} with provided name, email and a random ID.
      *
-     * @param name  - User name
-     * @param email - User email
+     * @param name  - User's name
+     * @param email - User's email
      */
     public User(String name, String email) {
         this.name = name;
@@ -43,12 +43,6 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public User(String name, String email) {
-        this.name = name;
-        this.email = email;
-        this.id = new Random().nextInt();
     }
 }
 
