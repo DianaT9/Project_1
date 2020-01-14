@@ -16,8 +16,8 @@ public class User {
     /**
      * Creates a new {@link User} with provided name, email and a random ID.
      *
-     * @param name  - User's personal name
-     * @param email - User's personal email
+     * @param name  - User's pers. name
+     * @param email - User's pers. email
      */
     public User(String name, String email) {
         this.name = name;
